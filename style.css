@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Tiro+Devanagari+Sanskrit&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(18, 121, 172);
+}
+.head{
+    display:flex;
+    place-content: center;
+
+}
+.head2{
+display: flex;
+height:600px;
+position: relative;
+}
+.name{
+    text-align: center;
+    width: 100%;
+    max-width:600px;
+    height: 100%;
+    max-height:100px;
+    font-size:150px;
+    color: antiquewhite;
+    top: -100px;
+    left:-750px;
+    background: none;
+    transform-origin: 500px 100px;
+    transform: rotate(-90deg);
+    font-weight: 600;
+    position:absolute;
+
+}
+.hiresity{
+    width:100%;
+    max-width:410px ;
+    height:auto;
+    max-height:600px;
+    position: sticky;
+
+}
+
+body .heading {
+    font-size: 40px;
+}
+
+.heading h1 {
+    color:white;  
+}
+.heading span{
+    color: black;
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+}
+
+.container {
+    position: relative;
+    max-width:480px;
+    width: 100%;
+    background: white;
+    box-shadow: 2px 2px 15px 10px rgba(62, 61, 61, 0.632);
+    border-radius: 15px;
+    float: right;
+    margin-top:20px;
+}
+
+.container .form {
+    padding: 50px;
+}
+
+.container .form .title {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.form .input-field {
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.input-field input {
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    position: absolute;
+    padding: 0px 30px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid gray;
+    transition: all 0.2s ease;
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: rgba(28, 99, 170, 0.694);
+}
+
+.input-field input:is(:focus, :valid) {
+    border-bottom-color: rgba(5, 122, 255, 0.712);
+}
+
+.checkbox-text {
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input {
+    margin: 0 10px -2px 4px;
+    accent-color: rgb(18, 134, 172);
+}
+
+.form .btn {
+    margin-top: 35px;
+}
+
+.form .btn input {
+    border: none;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    background-color: rgb(18, 134, 172);
+    border-radius: 50px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn input:hover {
+    background-color: rgba(36, 140, 219, 0.822);
+}
+
+.form .login {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.signup-text {
+    color: rgb(18, 134, 172);
+}
+
+@media screen and(max-width:600px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name{
+        display:none;
+
+    }
+    .hiresity{
+        display:none;
+    }
+
+
+}
